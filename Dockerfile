@@ -11,5 +11,5 @@ WORKDIR /app
 COPY ./app /app
 
 # These lines were causing PermissionDenied error
-#RUN adduser -D user
-#USER user
+RUN adduser -D user
+USER user
